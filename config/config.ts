@@ -1,7 +1,6 @@
 import { http, createConfig } from 'wagmi'
 import { mainnet, holesky, liskSepolia } from 'wagmi/chains'
 import { injected, metaMask, safe, walletConnect } from 'wagmi/connectors'
-import { switchChain } from '@wagmi/core'
 
 const projectId = ''
 
