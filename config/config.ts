@@ -2,7 +2,7 @@ import { http, createConfig } from 'wagmi'
 import { mainnet, holesky, liskSepolia } from 'wagmi/chains'
 import { injected, metaMask, safe, walletConnect } from 'wagmi/connectors'
 
-const projectId = ''
+const projectId = import.meta.env.REACT_APP_REOWN_ID
 
 export const config = createConfig({
   chains: [mainnet, holesky, liskSepolia],
@@ -18,5 +18,3 @@ export const config = createConfig({
     [liskSepolia.id]: http("https://rpc.sepolia-api.lisk.com"),
   },
 })
-
-// export const PROJECT_ID = process.env.REACT_APP_REOWN_ID
