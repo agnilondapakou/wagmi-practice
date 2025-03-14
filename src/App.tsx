@@ -1,7 +1,6 @@
 import { SetStateAction, useEffect, useState } from "react";
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { useAccount, WagmiProvider } from 'wagmi'
-import { ethers } from "ethers";
 import { config } from '../config/config'
 import { Account } from './account'
 import { WalletOptions } from './wallet-options'
@@ -68,7 +67,7 @@ export default function App() {
       </WagmiProvider>
       <p>
             Current Chain:{" "}
-            <strong>{CHAIN_IDS[chainId] || "Onknown chain"}</strong>
+            <strong>{CHAIN_IDS['0x1'] || "Onknown chain"}</strong>
           </p>
           <select onChange={(e) => switchChain(e.target.value)} value={chainId}>
             {SUPPORTED_CHAINS.map((chain) => (
