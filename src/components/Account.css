@@ -1,0 +1,41 @@
+#account button{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#disconnect {
+    background-color: #f44336;
+}
+
+#account #account-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#account #chains {
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    /* font-size: 16px; */
+    margin: 8px 10px;
+    width: 20%;
+    color: black;
+}
+
+#account #chains img{
+    width: 20px;
+    height: 20px;
+}

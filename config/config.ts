@@ -1,20 +1,13 @@
 import { http, createConfig } from 'wagmi'
-import { mainnet, holesky, liskSepolia } from 'wagmi/chains'
-import { injected, metaMask, safe, walletConnect } from 'wagmi/connectors'
-
-const projectId = import.meta.env.REACT_APP_REOWN_ID
+import { mainnet, liskSepolia, sepolia, base } from 'wagmi/chains'
 
 export const config = createConfig({
-  chains: [mainnet, holesky, liskSepolia],
-  connectors: [
-    injected(),
-    walletConnect({ projectId }),
-    metaMask(),
-    safe(),
-  ],
+  chains: [mainnet, sepolia, base, liskSepolia],
+  connectors: [],
   transports: {
     [mainnet.id]: http("https://eth.drpc.org"),
-    [holesky.id]: http("https://holesky.drpc.org"),
+    [sepolia.id]: http("https://sepolia.drpc.org"),
+    [base.id]: http("https://base.drpc.org"),
     [liskSepolia.id]: http("https://rpc.sepolia-api.lisk.com"),
   },
 })
