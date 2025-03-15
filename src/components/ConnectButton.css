@@ -5,7 +5,37 @@ button{
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(0, 201, 249);
+    color: black;
     font-size: 16px;
     margin: 8px 0;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+#connection-space{
+    align-items: center;
+    gap: 8px;
+    background-color: black;
+    padding: 45px;
+    border-radius: 20px;
+}
+
+#connection-space p{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+#connection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.452);
 }

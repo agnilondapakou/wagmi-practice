@@ -17,6 +17,7 @@ export default function App() {
 
   return (
     <>
+      <div id='bg-image'></div>
       <WagmiProvider config={config}>
         <QueryClientProvider client={queryClient}>
           <ConnectWallet/>
